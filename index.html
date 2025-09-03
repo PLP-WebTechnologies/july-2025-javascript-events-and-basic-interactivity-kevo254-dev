@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MK Construction Ltd - Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏗️ MK Construction Ltd</h1>
+    <p>Building Dreams, Creating Value</p>
+  </header>
+
+  <!-- Part 1: Event Handling Example -->
+  <section>
+    <h2>Company Updates</h2>
+    <button id="clickBtn">Show Latest Update</button>
+    <p id="message"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section>
+    <h2>Interactive Features</h2>
+
+    <!-- Light/Dark Mode Toggle -->
+    <button id="themeToggle">🌙 Toggle Dark Mode</button>
+
+    <!-- Project Counter -->
+    <div class="counter">
+      <p>Number of Ongoing Projects:</p>
+      <button id="decrement">-</button>
+      <span id="count">5</span>
+      <button id="increment">+</button>
+    </div>
+
+    <!-- Collapsible FAQ -->
+    <div class="faq">
+      <h3 class="faq-question">What services do you offer?</h3>
+      <p class="faq-answer">We specialize in residential apartments, commercial buildings, and real estate development.</p>
+
+      <h3 class="faq-question">Where are you located?</h3>
+      <p class="faq-answer">We are headquartered in Nairobi, Kenya with projects across the region.</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Get in Touch</h2>
+    <form id="signupForm">
+      <input type="text" id="name" placeholder="Your Name"><br>
+      <span class="error" id="nameError"></span><br>
+
+      <input type="email" id="email" placeholder="Your Email"><br>
+      <span class="error" id="emailError"></span><br>
+
+      <input type="text" id="project" placeholder="Type of Project (e.g., Apartments, Roads)"><br>
+      <span class="error" id="projectError"></span><br>
+
+      <input type="password" id="password" placeholder="Create a Password"><br>
+      <span class="error" id="passwordError"></span><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 MK Construction Ltd | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
